@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">  
+</head>
+
+  <body>
+
+    <nav class="navbar md:navbar-expand bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarDrawer" aria-controls="navbarDrawer" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon" aria-hidden="true"></span>
+    </button>
+    <dialog class="drawer drawer-end" tabindex="-1" id="navbarDrawer" aria-labelledby="navbarDrawerLabel">
+      <div class="drawer-header">
+        <h5 class="drawer-title" id="navbarDrawerLabel">Menu</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+      </div>
+      <div class="drawer-body mb-2 md:mb-0">
+        <ul class="nav navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" type="button" data-bs-toggle="menu" aria-expanded="false">
+              Menu
+            </button>
+            <div class="menu">
+              <a class="menu-item" href="#">Action</a>
+              <a class="menu-item" href="#">Another action</a>
+              <hr class="menu-divider">
+              <a class="menu-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="hstack gap-2" role="search">
+          <input class="form-control" type="search" placeholder="Search" aria-label="Search"/>
+          <button class="btn-solid btn-icon theme-secondary" type="submit">
+            <svg class="bi" width="16" height="16"><use href="#search" /></svg>
+          </button>
+        </form>
+      </div>
+    </dialog>
+  </div>
+</nav>
+
+
+
+
+<div id="carouselPeek" class="carousel slide" data-bs-ends="stop" style="--bs-carousel-items-peek: 3rem; --bs-carousel-items-gap: 1rem;">
+  <div class="d-flex justify-content-between align-items-center">
+    <h5 class="mb-0">Peek the neighbors</h5>
+    <div>
+      <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselPeek" data-bs-slide="prev" style="--bs-carousel-control-icon-width: 1rem;">
+        <span class="carousel-icon-prev" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselPeek" data-bs-slide="next" style="--bs-carousel-control-icon-width: 1rem;">
+        <span class="carousel-icon-next" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active"><img src="https://podpop.com.br/PodPOP/wp-content/uploads/2021/12/Banner-livros-Podpop.jpg" class="d-block w-100 rounded-5" alt="..."></div>
+    <div class="carousel-item"><img src="https://podpop.com.br/PodPOP/wp-content/uploads/2021/12/Banner-livros-Podpop.jpg" class="d-block w-100 rounded-5" alt="..."></div>
+    <div class="carousel-item"><img src="https://podpop.com.br/PodPOP/wp-content/uploads/2021/12/Banner-livros-Podpop.jpg" class="d-block w-100 rounded-5" alt="..."></div>
+    <div class="carousel-item"><img src="https://podpop.com.br/PodPOP/wp-content/uploads/2021/12/Banner-livros-Podpop.jpg" class="d-block w-100 rounded-5" alt="..."></div>
+    <div class="carousel-item"><img src="https://podpop.com.br/PodPOP/wp-content/uploads/2021/12/Banner-livros-Podpop.jpg" class="d-block w-100 rounded-5" alt="..."></div>
+  </div>
+</div>
+
+
+
+
+<div class="container m-4 row mx-auto">
+
+    
+<h3>seja bem vindo a Bliotecasenac</h3>
+<p>
+    Aqui voce encontra os melhores livros de programaçao, aprenda desde HTML, 
+    ate o tao sonhado Java, as melhores promoçoes de livros voce encontra aqui,
+    humilhamos a amazon e falimos a Saraiva. voce pode verificar os livros abaixo
+</p>
+
+
+    
+    <section class="card mx-auto m-4" style="max-width: 320px">
+    <img src="https://m.media-amazon.com/images/I/613ZTDcDsiL.jpg" class="card-img-top" alt="...">
+     <div class="card-body">
+        <h4 class="card-title">Livro HTML e CSS</h4>
+        <p class="card-text">
+            Aprenda o melhor da criação de sites. 
+        </p>
+        <a href="#" class="btn-solid theme-primary">Acessar</a>
+      </div>
+    </section>
+
+    <section class="card mx-auto m-4" style="max-width: 320px">
+    <img src="https://m.media-amazon.com/images/I/61jzaHuWFLL._AC_UF1000,1000_QL80_.jpg" class="card-img-top" alt="...">
+     <div class="card-body">
+        <h4 class="card-title">Livro Java</h4>
+        <p class="card-text">
+            Aprenda o melhor da criação de sites. 
+        </p>
+        <a href="#" class="btn-solid theme-primary">Acessar</a>
+      </div>
+    </section>
+
+
+
+
+    <section class="card mx-auto m-4" style="max-width: 320px">
+    <img src="https://m.media-amazon.com/images/I/91z1xY4ppaL._AC_UF1000,1000_QL80_.jpg" class="card-img-top" alt="...">
+     <div class="card-body">
+        <h4 class="card-title">Livro Javascript</h4>
+        <p class="card-text">
+            Aprenda o melhor da criação de sites. 
+        </p>
+        <a href="#" class="btn-solid theme-primary">Acessar</a>
+      </div>
+    </section>
+
+
+
+
+    <section class="card mx-auto m-4" style="max-width: 320px">
+    <img src="https://http2.mlstatic.com/D_NQ_NP_860933-MLB45418770342_042021-O.webp" class="card-img-top" alt="...">
+     <div class="card-body">
+        <h4 class="card-title">Livro PHP</h4>
+        <p class="card-text">
+            Aprenda o melhor da criação de sites. 
+        </p>
+        <a href="#" class="btn-solid theme-primary">Acessar</a>
+      </div>
+    </section>
+
+
+
+
+    <section class="card mx-auto m-4" style="max-width: 320px">
+    <img src="https://m.media-amazon.com/images/I/81HMN9NUFKS.jpg" class="card-img-top" alt="...">
+     <div class="card-body">
+        <h4 class="card-title">Livro Engenharia de software</h4>
+        <p class="card-text">
+            Aprenda o melhor da criação de sites. 
+        </p>
+        <a href="#" class="btn-solid theme-primary">Acessar</a>
+      </div>
+    </section>
+
+
+
+
+        <section class="card mx-auto m-4" style="max-width: 320px">
+    <img src="https://www.inf.ufrgs.br/site/wp-content/uploads/2014/07/livros04.jpg" class="card-img-top" alt="...">
+     <div class="card-body">
+        <h4 class="card-title">Livro Engenharia de software</h4>
+        <p class="card-text">
+            Aprenda o melhor da criação de sites. 
+        </p>
+        <a href="#" class="btn-solid theme-primary">Acessar</a>
+      </div>
+    </section>
+
+
+
+
+    <section class="card mx-auto m-4" style="max-width: 320px">
+    <img src="https://www.inf.ufrgs.br/site/wp-content/uploads/2014/07/livros04.jpg" class="card-img-top" alt="...">
+     <div class="card-body">
+        <h4 class="card-title">Livro Engenharia de software</h4>
+        <p class="card-text">
+            Aprenda o melhor da criação de sites. 
+        </p>
+        <a href="#" class="btn-solid theme-primary">Acessar</a>
+      </div>
+    </section>
+
+
+
+
+    <section class="card mx-auto m-4" style="max-width: 320px">
+    <img src="https://www.inf.ufrgs.br/site/wp-content/uploads/2014/07/livros04.jpg" class="card-img-top" alt="...">
+     <div class="card-body">
+        <h4 class="card-title">Livro Engenharia de software</h4>
+        <p class="card-text">
+            Aprenda o melhor da criação de sites. 
+        </p>
+        <a href="#" class="btn-solid theme-primary">Acessar</a>
+      </div>
+    </section>
+
+
+
+
+    <section class="card mx-auto m-4" style="max-width: 320px">
+    <img src="https://www.inf.ufrgs.br/site/wp-content/uploads/2014/07/livros04.jpg" class="card-img-top" alt="...">
+     <div class="card-body">
+        <h4 class="card-title">Livro Engenharia de software</h4>
+        <p class="card-text">
+            Aprenda o melhor da criação de sites. 
+        </p>
+        <a href="#" class="btn-solid theme-primary">Acessar</a>
+      </div>
+    </section>
+
+    
+
+
+</div>
+
+
+
+
+<footer class="bg-dark text-white py-4 mt-5" style="color: white;">
+    <div class="container">
+
+    <div class="row">
+        <div class="col"><h1>parte 1</h1></div>
+            <h4 class="fw-bold"> Bibliotecasenac</h4>
+          <p>conectando conhecimento, tecnologia e literatura em um so lugar!</p>
+            
+          
+          
+          <div class="col"><h5>siga nossas redes:</h5>
+            <a href="#" class="text-white fs-4 me-3"> <i class="bi bi-instagram"></i></a>
+         <a href="#" class="text-white fs-4 me-3"><i class="bi bi-facebook"></i></a>
+           <a href="#" class="text-white fs-4 me-3"><i class="bi bi-linkedin"></i></a>
+           <a href="#" class="text-white fs-4 me-3"><i class="bi bi-github"></i></a>
+        </div>
+ 
+</div>
+</div>
+
+</footer>
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
+  </body>
+</html>

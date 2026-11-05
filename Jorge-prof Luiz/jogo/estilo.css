@@ -1,0 +1,59 @@
+.quadrado{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    font-size: 150px;
+    background-color: rgba(50, 42, 165, 0.233);
+
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20250606/pngtree-a-dark-alleyway-with-neon-lights-and-graffiti-cyberpunk-scene-in-image_17390975.jpg);
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.painel{
+    width: 800px;
+    border: 1px solid gray;
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.577);
+    color: white;
+}
+.jogo{
+    margin: auto;
+}
+td{
+    border: solid 4px white;
+    border-radius: 30px;
+}
+.quadrado:hover{
+    box-shadow: inset 1px 1px 50px white;
+}
+.botao{
+    background-color: brown;
+    font-size: 20px;
+    color: white;
+    margin: 40px;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+.botao:hover{
+    background-color: black;
+    color: white;
+}
+@media(max-width: 768px){
+    .quadrado{
+        width: 100px;
+        height: 100px;
+        font-size: 50px;
+
+    }
+    body{
+        background-size: auto;
+        margin-top: 100px;
+    }
+}

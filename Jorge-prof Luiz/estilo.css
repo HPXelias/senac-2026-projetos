@@ -1,0 +1,273 @@
+body {
+   
+   
+   
+   
+   /*cor de fundo*/
+   background-color: rgb(0, 0, 0);
+
+    /*aterar fonte*/
+    font-family:'segoe UI';
+
+    /*tamanho da fonte*/
+    font-size: 20PX;
+
+    /*alinhar no centro*/
+    text-align: center;
+
+
+    /*cor da letra*/
+     color:rgba(0, 0, 0, 0.973);
+    background-image: url(4k-black-hole-minimalistic-wallpaper.png);
+    background-size: cover;
+
+
+
+
+
+
+
+
+
+
+}
+
+img{
+
+
+    /*borda de imagem*/
+    border-radius: 15px;
+
+    /*largura*/
+    width: 150px;
+
+    /*altura*/
+    height: 150px;
+
+    /*BORDA*/
+    border: 5px solid rgb(0, 0, 0);
+
+    /*colocar sombra*/
+    box-shadow: 2px 2px 9px rgb(0, 0, 0);
+
+
+
+
+}
+
+label{
+
+    /*deixa a etiqueta do campo ocupado largura*/
+    display: block;
+    font-weight: bold;
+    /*margem*/
+    margin: 10px
+
+
+
+
+
+
+}
+input {
+
+    border-radius: 5px;
+    /*para tirar borda*/
+    border: none;
+    /*altura*/
+    height: 25px;
+    /*largura*/
+    width: 30vw;
+
+    text-align: center;
+    color: black;
+
+
+
+}
+input:focus{
+
+    outline:none;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+input::placeholder{
+
+    color: black;
+
+
+
+
+
+
+}
+    /*button*/
+#cadastrar{
+
+    /*cor de fundo*/
+    background-color: rgba(6, 37, 218, 0.438);
+
+    /*cor da letra*/
+    color: rgb(0, 0, 0);
+ 
+    /*espaçamento externo*/
+    margin: 50px;
+
+    /*espaçamento interno*/
+    padding: 10px;
+    border:none;
+
+    /*arredondar*/
+    border-radius: 10px;
+
+}
+/*button:hover*/
+#cadastrar:hover{
+
+    background-color: rgb(24, 78, 255);
+    transition: 1s;
+    scale: 1s;
+    rotate: calc(360deg);
+
+
+
+
+
+
+
+
+
+
+
+}
+/*trabalhando com classes e id*/
+#id1{
+
+background-color: rgba(238, 5, 5, 0.205);
+ /*cor da letra*/
+    color: rgb(0, 0, 0);
+ 
+    /*espaçamento interno*/
+    padding: 10px;
+    border:none;
+
+    /*arredondar*/
+    border-radius: 10px;
+     
+    margin: 20px;
+
+
+
+}
+#id2{
+
+background-color: rgba(238, 5, 226, 0.185);
+
+ /*cor da letra*/
+    color: rgb(0, 0, 0);
+ 
+    /*espaçamento interno*/
+    padding: 10px;
+    border:none;
+
+    /*arredondar*/
+    border-radius: 10px;
+
+      margin:20px;
+
+}
+.classe{
+
+background-color: rgba(5, 238, 5, 0.226);
+
+ /*cor da letra*/
+    color: rgb(0, 0, 0);
+ 
+margin: 20px;
+    /*espaçamento interno*/
+    padding: 10px;
+    border:none;
+
+    /*arredondar*/
+    border-radius: 10px;
+
+
+}
+.tabela{
+   margin: 50px;
+   background-color: rgba(0, 0, 0, 0.651);
+   color:rgb(241, 234, 234);
+   border:black;
+    margin: auto;
+}
+
+ul{
+
+   width:130px;
+
+   /*centralizar*/
+    margin:auto;
+}
+.cartao{
+   background-color: hsla(231, 92%, 66%, 0.411);
+   max-width: 700px;
+   margin-top: 40px;
+   margin-bottom: 40px;
+   border-radius: 20px;
+
+
+
+}
+
+
+
+/*teste*/
+#id1:hover{
+
+background-color: rgb(238, 5, 5);
+transition: 1s;
+    scale: 1s;
+    rotate: calc(360deg);
+
+
+
+
+
+}
+#id2:hover{
+
+background-color: rgb(245, 3, 233);
+transition: 1s;
+    scale: 1s;
+    rotate: calc(360deg);
+
+
+
+
+
+}
+.classe:hover{
+
+background-color: rgb(6, 202, 6);
+transition: 1s;
+    scale: 1s;
+    rotate: calc(360deg);
+
+
+
+
+
+}

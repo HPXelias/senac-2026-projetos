@@ -1,0 +1,68 @@
+body{
+
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(148, 149, 150);
+
+
+
+
+
+
+
+
+
+}
+/*personalizaçao de produto individual*/
+ .produto{
+
+     background-color: white;
+        /*espaçamentointerno*/
+        padding: 20px;
+        text-align: center;
+        border-radius: 8px;
+       font-size: 1em;
+
+ }
+.produto img{
+
+    width:70%;
+}
+.produto p {
+    color: darkgray;
+}
+.produto .preco{
+
+    color:green;
+    font-weight: bold;
+}
+.produtos{
+
+    display:grid;
+    /*quantas colunas*/
+    grid-template-columns: 1fr 1fr 1fr ;
+
+    /*espaçamento*/
+    gap:10px;
+    width: 70%;
+    margin:auto;
+
+    margin-top: 25%;
+}
+/*quando passar o mouse no card*/
+.produto:hover{
+
+    scale: 1.1;
+    transition: 1s;
+    box-shadow: 1px 1px 10px red;
+
+}
+/*adaptaçao para celular*/
+@media (max-width: 768px){
+    .produto{
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        font-size: 10px;
+        width:100%;
+    }
+}

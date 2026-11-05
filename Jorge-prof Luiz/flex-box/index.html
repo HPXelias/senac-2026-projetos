@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexe-box</title>
+
+    <style>
+
+        h1{
+
+            color: red;
+        }
+        body{
+            font-family: sans-serif;
+            background-color: #2f3f5f;
+        }
+        .elementoFilho{
+
+            background-color: aliceblue;
+            /*espaçamento interno*/
+            padding: 15px;
+            text-align: center;
+            border-radius: 18px;
+            /*largura maxima*/
+            max-width: 300px;
+        }
+        .elementoFilho img{
+
+            width: 100px;
+            border-radius: 6px;
+        }
+        .elementoPai{
+
+            display: flex;
+            /*define a direçao dos elementos - direita, esquerda*/
+            flex-direction: row;
+            /*gerar quebra de linha automatica*/
+            flex-wrap: wrap;
+            gap: 20px;
+            /*centralisar esquerda direita*/
+            justify-content: center;
+            /*centralisar acima e abaixo*/
+            align-items: center;
+            height: 100vh;
+
+        }
+        .preco{
+            color: green;
+            font-weight: bold;
+
+        }
+        button{
+            background-color: green;
+            border: none;
+            padding: 10px;
+            border-radius: 10px;
+            color: whitesmoke;
+            box-shadow: 2px 2px 9px black;
+
+        }
+        button:hover{
+            background-color: black;
+            scale: 1.2;
+            transition: 1s;
+            cursor: pointer;
+        }
+        
+    </style>
+
+
+
+
+
+
+</head>
+<body>
+    
+           <h1> flexe-box</h1>
+
+        <h3 style="color: blue;"> alinhamento</h3>
+        <div class="elementoPai">
+
+            <div class="elementoFilho">
+                <img src="images.jpg">
+                <h4>Fiat Argo</h4>
+                <p>2022 - flex - 40.000km</p>
+                <p class="preco">R$70.000</p>
+                <button>comprar</button>
+
+            </div>
+
+
+     <div class="elementoFilho">
+                <img src="Chevrolet_Opala_SS_19744.jpg">
+                <h4>Chavrolet Opala SS</h4>
+                <p>2024 - flex - 20.000km</p>
+                <p class="preco">R$150.000</p>
+                <button>comprar</button>
+
+            </div>
+
+
+                 <div class="elementoFilho">
+                <img src="images (1).jpg">
+                <h4>Maverick</h4>
+                <p>2025 - flex - 10.000km</p>
+                <p class="preco">R$160.000</p>
+                <button>comprar</button>
+
+            </div>
+
+
+                 <div class="elementoFilho">
+                <img src="Velocity-Ford-Mustang-Fastback-2-1536x1024-1.webp">
+                <h4>Mustang </h4>
+                <p>2026 - flex - 00.000km</p>
+                <p class="preco">R$250.000</p>
+                <button>comprar</button>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Idade</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+        }
+        input {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            text-align: center;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        #resultado {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Calculadora de Idade</h2>
+        <p>Digite seu ano de nascimento:</p>
+        <input type="number" id="anoNascimento" placeholder="Ex: 1995" min="0000" max="2026">
+        <br>
+        <button onclick="calcularIdade()">Calcular</button>
+        
+        <div id="resultado"></div>
+    </div>
+
+    <script>
+        function calcularIdade() {
+            // Pega o valor digitado no input
+            const anoInput = document.getElementById('anoNascimento').value;
+            const resultadoDiv = document.getElementById('resultado');
+
+            // Valida se o campo está vazio
+            if (!anoInput) {
+                resultadoDiv.innerHTML = "Por favor, digite um ano!";
+                resultadoDiv.style.color = "red";
+                return;
+            }
+
+            const anoNasc = parseInt(anoInput);
+            const anoAtual = new Date().getFullYear();
+
+            // Valida se o ano é válido
+            if (anoNasc > anoAtual || anoNasc < 0) {
+                resultadoDiv.innerHTML = "Por favor, insira um ano válido!";
+                resultadoDiv.style.color = "red";
+                return;
+            }
+
+            // Cálculo básico da idade
+            let idade = anoAtual - anoNasc;
+
+            // Exibe o resultado na tela
+            resultadoDiv.style.color = "#333";
+            resultadoDiv.innerHTML = `Você tem (ou fará) <strong>${idade}</strong> anos em ${anoAtual}.`;
+        }
+    </script>
+
+</body>
+</html>

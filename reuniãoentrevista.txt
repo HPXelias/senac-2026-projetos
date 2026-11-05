@@ -1,0 +1,26 @@
+reunião/entrevista 
+
+
+*O que seu cliente faz?
+
+
+*como ele faz?
+
+
+*qual produto oferece?
+
+
+*quem e seu publico?
+
+
+*onde esta este publico?
+
+
+*que valores deseja passar?
+
+
+um sistema para gerar a fila de pedidos de impressão 3D da empresa e conseguir cadastrar os pedidos dos clientes
+As impressões são calculadas por tempo de impressão, quantidade de filamento, e energia gasta. 
+necessita de nome, CPF, telefone, idade, @gmail. função de consumo de estoque de filamento e de impressora onde mostra quantas impressoras tem em uso 
+tamanho máximo 20 por 20 centímetros, tem um dono e dois colaboradores eles podem ver o estoque, precisa que  tenha sistema de venda, não existe referencia sistema deparar no @gmail quando algum produto for pare entrega e um orçamento notificação de estoque de quantidade de filamento no estoque que vai direto para o gmail e o aplicativo aviso de estoqueio baixo, notificação de quais filamento são, um agente de IA para auxiliar ao cliente, se for cancelar o pedido cerar ressarcido o valor, tenha um botão de personalizar 
+
